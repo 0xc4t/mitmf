@@ -12,3 +12,7 @@
 - https://github.com/K1M4K-ID/mitm
 - https://www.bettercap.org/modules/ethernet/spoofers/arp.spoof/
 
+### Already installed
+
+- Mitmproxy
+- Bettercap
