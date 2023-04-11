@@ -24,7 +24,7 @@ print ('''
                                                                                             ▀   
 ''')
 print("")
-print("[+] Code : VarelSecurity (KucingMalas)")
+print("[+] Code by VarelSecurity (KucingMalas)")
 print("")
 os.system("ifconfig | grep -e ': ' | sed -e 's/: .*//g' | sed -e 's/^/   /'")
 
