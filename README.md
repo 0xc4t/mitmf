@@ -1,18 +1,14 @@
-## mitmf - kucing malas
-![Screenshot from 2023-04-11 16-24-17](https://user-images.githubusercontent.com/105418279/231130210-ee86a12b-56c1-4f9e-b0cd-f319151be864.png)
+## mitmf - Automated Tools
+![image](https://github.com/0xkucing/mitmf/assets/105418279/04842dc5-2a94-45e3-8a8e-65cfcaa708c1)
 
 ### Man in the middle attack tools
-
-- Downgrade https to http
 - Sniffing using mitmproxy
 - Arp spoofing using bettercap
 
-### Reference
-
-- https://github.com/K1M4K-ID/mitm
-- https://www.bettercap.org/modules/ethernet/spoofers/arp.spoof/
-
-### Already installed
-
+### Requires tools
 - Mitmproxy
 - Bettercap
+
+### Reference
+- https://github.com/K1M4K-ID/mitm
+- https://www.bettercap.org/modules/ethernet/spoofers/arp.spoof/
