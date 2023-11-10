@@ -12,24 +12,21 @@ os.system('clear')
 
 
 print("")
-print ('''
-   ▄▄▄▄███▄▄▄▄    ▄█      ███       ▄▄▄▄███▄▄▄▄           ▄████████ ███    █▄   ▄████████    ▄█   ▄█▄ 
- ▄██▀▀▀███▀▀▀██▄ ███  ▀█████████▄ ▄██▀▀▀███▀▀▀██▄        ███    ███ ███    ███ ███    ███   ███ ▄███▀ 
- ███   ███   ███ ███▌    ▀███▀▀██ ███   ███   ███        ███    █▀  ███    ███ ███    █▀    ███▐██▀   
- ███   ███   ███ ███▌     ███   ▀ ███   ███   ███       ▄███▄▄▄     ███    ███ ███         ▄█████▀    
- ███   ███   ███ ███▌     ███     ███   ███   ███      ▀▀███▀▀▀     ███    ███ ███        ▀▀█████▄    
- ███   ███   ███ ███      ███     ███   ███   ███        ███        ███    ███ ███    █▄    ███▐██▄   
- ███   ███   ███ ███      ███     ███   ███   ███        ███        ███    ███ ███    ███   ███ ▀███▄ 
-  ▀█   ███   █▀  █▀      ▄████▀    ▀█   ███   █▀         ███        ████████▀  ████████▀    ███   ▀█▀ 
-                                                                                            ▀   
+print (f'''
+{BLUE}
+███    ███ ██ ████████ ███    ███  ██████  ██   ██ 
+████  ████ ██    ██    ████  ████ ██  ████  ██ ██  
+██ ████ ██ ██    ██    ██ ████ ██ ██ ██ ██   ███   
+██  ██  ██ ██    ██    ██  ██  ██ ████  ██  ██ ██  
+██      ██ ██    ██    ██      ██  ██████  ██   ██ 
+{NC}                                               
 ''')
-print("")
-print("[+] Code by VarelSecurity (KucingMalas)")
+print(f"{BLUE}[+] Code by Kucing Malas{NC}")
 print("")
 os.system("ifconfig | grep -e ': ' | sed -e 's/: .*//g' | sed -e 's/^/   /'")
 
-
-interface = input(f"{YELLOW}(MITM){NC}Interface: ")
+print ('')
+interface = input(f"{YELLOW}(MITM) {NC}Interface: ")
 
 os.system(f"sudo echo 1 > /proc/sys/net/ipv4/ip_forward")
 os.system(f"sudo iptables -t nat -A PREROUTING -i {interface} -p tcp --dport 80 -j REDIRECT --to-port 8080 > /dev/null 2>&1 &")
